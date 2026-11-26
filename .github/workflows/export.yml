@@ -1,10 +1,14 @@
 name: Export
 
 # Daily: publish what Frametrace users shared since the last run on the `data` branch.
+# Also runs when the export itself changes on main, so a fix is tried right away.
 on:
   schedule:
     - cron: "23 2 * * *" # 02:23 UTC
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/export.yml", "tools/**", "tests/**"]
 
 permissions:
   contents: write # push the data branch, create the monthly CSV releases
