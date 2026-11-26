@@ -325,9 +325,16 @@ def main(argv: list[str] | None = None) -> int:
         n_caps, n_comps = stats["captures"], stats["comparisons"]
         publish(tree, f"Dataset as of {when} UTC: {n_caps} captures, {n_comps} comparisons")
         log("pushed the data branch")
+    acked = 0
     for i in range(0, len(acks), 500):
         done = call(token, {"action": "ack", "rows": acks[i : i + 500]})
-        log(f"acknowledged {done.get('acked')} of {len(acks[i : i + 500])}")
+        acked += int(done.get("acked") or 0)
+    log(f"acknowledged {acked} of {len(acks)}")
+    if acked < len(acks):
+        # Rows changed since the pull are refused on purpose (they go out next run); many
+        # refusals mean the inbox and this script disagree: fail so GitHub sends a notice.
+        log(f"{len(acks) - acked} rows weren't acknowledged; they'll be exported again")
+        return 1 if acked < len(acks) * 0.9 else 0
     return 0
 
 

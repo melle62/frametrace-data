@@ -18,7 +18,8 @@ CSV = b"\x1f\x8bfake-gzip"
 
 
 def git(*args, cwd) -> str:
-    return subprocess.run(["git", *args], cwd=cwd, check=True, capture_output=True, text=True).stdout
+    out = subprocess.run(["git", *args], cwd=cwd, check=True, capture_output=True, text=True)
+    return out.stdout
 
 
 def row(n: int, who="a1b2c3d4e5f60718", kind="capture", csv=True) -> dict:
@@ -163,3 +164,14 @@ def test_a_bad_checksum_keeps_the_csv_in_the_inbox(repo, monkeypatch):
         git("show", "data:captures/cs2/a1b2c3d4e5f60718/20261126-100001-cs2.json", cwd=repo)
     )
     assert rec["csv"] is None and "csv_archive" not in inbox.acks[0]
+
+
+def test_a_run_fails_when_the_inbox_refuses_the_acks(repo, monkeypatch):
+    inbox = FakeInbox([row(1), row(2)])
+
+    def refusing(token, body):
+        reply = inbox(token, body)
+        return {"ok": True, "acked": 0} if body["action"] == "ack" else reply
+
+    monkeypatch.setattr(export, "call", refusing)
+    assert export.main([]) == 1
