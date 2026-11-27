@@ -175,3 +175,26 @@ def test_a_run_fails_when_the_inbox_refuses_the_acks(repo, monkeypatch):
 
     monkeypatch.setattr(export, "call", refusing)
     assert export.main([]) == 1
+
+
+def test_stats_count_benchmarks_bundles_and_settings_per_game(repo, monkeypatch):
+    rows = [row(1), row(2), row(3), row(4, kind="comparison", csv=False)]
+    rows[0]["data"] = {"user": {"benchmark": "Dust  Benchmark", "bundle": "b1", "label": "Base"},
+                       "game": {"build": "26879581"}, "game_settings": {"settings": [["a", "1"]]}}
+    rows[1]["data"] = {"user": {"benchmark": "Dust Benchmark", "bundle": "b1"},
+                       "game": {"build": "26879581"}}
+    rows[2]["data"] = {"user": {}}  # fmt: skip
+    monkeypatch.setattr(export, "call", FakeInbox(rows))
+    assert export.main([]) == 0
+    stats = json.loads(git("show", "data:stats.json", cwd=repo))
+    assert stats["by_game"]["cs2"] == {
+        "captures": 3,
+        "comparisons": 1,
+        "benchmarks": {"Dust Benchmark": 2},
+        "untagged": 1,
+        "bundles": 1,
+        "bundled": 2,
+        "labelled": 1,
+        "settings_read": 1,
+        "builds": ["26879581"],
+    }
