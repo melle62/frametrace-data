@@ -1,10 +1,13 @@
 name: Export
 
-# Daily: publish what Frametrace users shared since the last run on the `data` branch.
+# Daily (twice, see below): publish what Frametrace users shared since the last run on the `data` branch.
 # Also runs when the export itself changes on main, so a fix is tried right away.
 on:
   schedule:
     - cron: "23 2 * * *" # 02:23 UTC
+    # A second try before the Research Bot's 06:10 Stockholm digest: GitHub sometimes starts
+    # scheduled runs hours late (02:23 ran at 11:02 on 2026-11-27). An idle run pushes nothing.
+    - cron: "17 4 * * *" # 04:17 UTC
   workflow_dispatch:
   push:
     branches: [main]

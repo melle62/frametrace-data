@@ -22,7 +22,8 @@ repeatably) into the game skills' **Community data** tables.
 data branch
 ├─ captures/<game>/<contributor>/<capture id>.json
 ├─ comparisons/<game>/<contributor>/<capture A>~<capture B>.json
-├─ stats.json   counts per kind and game, and the newest submission's time
+├─ stats.json   counts per kind and game, the newest submission's time, and per game
+│               (by_game) benchmarks, bundles, labels, settings read and builds
 └─ README.md
 ```
 
@@ -51,9 +52,23 @@ A capture's `data` is Frametrace's `result.json` as described in the Frametrace 
 [`docs/data.md`](https://github.com/melle62/frametrace/blob/main/docs/data.md): frame-time
 statistics, the bottleneck split, display path, PC latency, the game (name, store build,
 engine), its in-game settings when Frametrace could read them, the hardware and the Windows
-settings that matter for games, plus the user's label, group and who suggested the changes.
+settings that matter for games, plus what the user added in `data.user`:
+
+| Field | What it is |
+|---|---|
+| `label` | the user's name for the run ("Shadows medium") |
+| `group` | a group the user moved the run into |
+| `benchmark` | the user's tag for the scene ("Mirage Benchmark"): runs of another tag are another scene |
+| `bundle` | the bundle the user put the run in: runs with the same `bundle` are repeats of one setup, combined in the window (a run that disagrees beyond noise is left out) |
+| `advice` | who suggested the changes since the run before ("Claude", "A guide or video", ...) |
+| `split` | left over from before bundles were manual; ignore it |
+
 A comparison's `data` is what the Compare view showed: both capture IDs, the goal, the
-verdict, every metric's change and the settings that changed.
+verdict, every metric's change, the settings that changed and each side's benchmark. A side
+that is a bundle is its runs combined: `a` / `b` is then its newest run that counts and
+`a_runs` / `b_runs` lists every run that counts (`null` for a single run); such comparisons
+have `bundle.<bundle id>` for that side in their file name. Comparisons shared before
+2026-11-28 always compare single runs, even when the user compared bundles.
 
 ## Privacy
 
@@ -66,7 +81,10 @@ CSV assets). Copies someone downloaded before that can't be recalled. Full notic
 
 ## How it's updated
 
-`.github/workflows/export.yml` runs `tools/export.py` daily. It authenticates to the inbox
+`.github/workflows/export.yml` runs `tools/export.py` daily at 02:23 UTC and again at
+04:17 UTC (GitHub can start scheduled runs hours late; a run with nothing new pushes nothing).
+The time of the last run is on the repository's Actions page and in the public API:
+`https://api.github.com/repos/melle62/frametrace-data/actions/workflows/export.yml/runs?per_page=1`. It authenticates to the inbox
 with a GitHub Actions OIDC token issued to this repository's main branch (the inbox checks
 the token's repository and branch; there is no stored secret), writes the new submissions,
 moves the CSVs into the month's release, applies deletions, pushes `data` and then tells the

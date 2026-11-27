@@ -262,6 +262,47 @@ def apply_deletions(deletions: list[dict], releases: Releases) -> int:
     return removed
 
 
+def _game_stats(caps: list[Path], comps: list[Path]) -> dict:
+    """Per game: what the Research Bot and people browsing need first. Benchmarks are the
+    users' tags for their scenes (user.benchmark); bundles are runs a user put together as
+    repeats of one setup (user.bundle)."""
+    out: dict[str, dict] = {}
+    for path in sorted(caps):
+        try:
+            data = json.loads(path.read_text(encoding="utf-8")).get("data") or {}
+        except (OSError, ValueError):
+            continue
+        user = data.get("user") or {}
+        g = out.setdefault(
+            path.parent.parent.name,
+            {"captures": 0, "comparisons": 0, "benchmarks": Counter(), "untagged": 0,
+             "bundles": set(), "bundled": 0, "labelled": 0, "settings_read": 0, "builds": set()},
+        )  # fmt: skip
+        g["captures"] += 1
+        tag = " ".join(str(user.get("benchmark") or "").split())
+        if tag:
+            g["benchmarks"][tag] += 1
+        else:
+            g["untagged"] += 1
+        if user.get("bundle"):
+            g["bundled"] += 1
+            g["bundles"].add((path.parent.name, user["bundle"]))
+        g["labelled"] += bool(user.get("label"))
+        g["settings_read"] += bool((data.get("game_settings") or {}).get("settings"))
+        build = (data.get("game") or {}).get("build")
+        if build:
+            g["builds"].add(str(build))
+    for path in comps:
+        game = path.parent.parent.name
+        if game in out:
+            out[game]["comparisons"] += 1
+    for g in out.values():
+        g["benchmarks"] = dict(sorted(g["benchmarks"].items(), key=lambda kv: (-kv[1], kv[0])))
+        g["bundles"] = len(g["bundles"])
+        g["builds"] = sorted(g["builds"])
+    return dict(sorted(out.items(), key=lambda kv: (-kv[1]["captures"], kv[0])))
+
+
 def write_stats() -> dict:
     caps = list(WORK.glob("captures/*/*/*.json"))
     comps = list(WORK.glob("comparisons/*/*/*.json"))
@@ -277,6 +318,7 @@ def write_stats() -> dict:
         "comparisons": len(comps),
         "contributors": len({p.parent.name for p in caps + comps}),
         "games": dict(Counter(p.parent.parent.name for p in caps).most_common()),
+        "by_game": _game_stats(caps, comps),
     }
     (WORK / "stats.json").write_text(json.dumps(stats, indent=1) + "\n", encoding="utf-8")
     (WORK / "README.md").write_text(
