@@ -1,0 +1,110 @@
+{
+ "kind": "comparison",
+ "contributor": "81bdccf7fb6a4ad9",
+ "local_id": "20261127-220240-cs2~20261127-220240-cs2",
+ "schema": 1,
+ "app_version": "0.0.1",
+ "received_at": "2026-11-27T22:39:31.970236+00:00",
+ "updated_at": "2026-11-27T22:39:31.936+00:00",
+ "csv": null,
+ "data": {
+  "a": "20261127-220240-cs2",
+  "b": "20261127-220240-cs2",
+  "game": {
+   "exe": "cs2.exe",
+   "name": "Counter-Strike 2",
+   "build": "26879581",
+   "engine": "Source 2",
+   "store_id": "730"
+  },
+  "goal": "lows",
+  "notes": [],
+  "advice": null,
+  "copied": false,
+  "deltas": {
+   "Max": {
+    "a": 6.9874,
+    "b": 6.9874,
+    "change": 0,
+    "status": "same"
+   },
+   "P99": {
+    "a": 4.700699999999997,
+    "b": 4.700699999999997,
+    "change": 0,
+    "status": "same"
+   },
+   "1% low": {
+    "a": 212.73427361882287,
+    "b": 212.73427361882287,
+    "change": 0,
+    "status": "same"
+   },
+   "Median": {
+    "a": 1.5138,
+    "b": 1.5138,
+    "change": 0,
+    "status": "same"
+   },
+   "Average": {
+    "a": 526.4506586674249,
+    "b": 526.4506586674249,
+    "change": 0,
+    "status": "same"
+   },
+   "0.1% low": {
+    "a": 166.86712971182678,
+    "b": 166.86712971182678,
+    "change": 0,
+    "status": "same"
+   },
+   "Worst second": {
+    "a": 275.20987505071366,
+    "b": 275.20987505071366,
+    "change": 0,
+    "status": "same"
+   },
+   "CPU-side 1% low": {
+    "a": 249.70285360421104,
+    "b": 249.70285360421104,
+    "change": 0,
+    "status": "same"
+   },
+   "PC latency, P95": {
+    "a": 9.070064999999998,
+    "b": 9.070064999999998,
+    "change": 0,
+    "status": "same"
+   },
+   "Time in hitches": {
+    "a": 0.12776765634430307,
+    "b": 0.12776765634430307,
+    "change": 0,
+    "status": "same"
+   },
+   "CPU busy, median": {
+    "a": 0.6667,
+    "b": 0.6667,
+    "change": 0,
+    "status": "same"
+   },
+   "GPU busy, median": {
+    "a": 1.6139,
+    "b": 1.6139,
+    "change": 0,
+    "status": "same"
+   },
+   "PC latency, median": {
+    "a": 5.59045,
+    "b": 5.59045,
+    "change": 0,
+    "status": "same"
+   }
+  },
+  "status": "same",
+  "verdict": "No clear change for higher 1% lows.",
+  "target_fps": null,
+  "settings_changed": [],
+  "settings_unchanged_but_moved": false
+ }
+}

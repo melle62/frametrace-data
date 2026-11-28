@@ -1,0 +1,442 @@
+{
+ "kind": "capture",
+ "contributor": "81bdccf7fb6a4ad9",
+ "local_id": "20261127-180156-cs2",
+ "schema": 1,
+ "app_version": "0.0.1",
+ "received_at": "2026-11-27T17:03:30.311213+00:00",
+ "updated_at": "2026-11-27T22:40:19.132+00:00",
+ "csv": {
+  "url": "https://github.com/melle62/frametrace-data/releases/download/csv-2026-11/81bdccf7fb6a4ad9_20261127-180156-cs2.csv.gz",
+  "bytes": 2632895,
+  "sha256": "5799ef1b84a469a9ba4fb9b0108f1084e7ec9740469f7f71f7372df470e65656"
+ },
+ "data": {
+  "game": {
+   "exe": "cs2.exe",
+   "name": "Counter-Strike 2",
+   "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\game\\bin\\win64\\cs2.exe",
+   "build": "26879581",
+   "store": "Steam",
+   "engine": "Source 2",
+   "version": null,
+   "store_id": "730",
+   "install_dir": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Counter-Strike Global Offensive",
+   "name_source": "steam"
+  },
+  "goal": {
+   "key": "lows",
+   "target_fps": null
+  },
+  "user": {
+   "label": "Discord: HW accel off",
+   "bundle": "20261127-180156-cs2",
+   "benchmark": "Dust Benchmark"
+  },
+  "checks": [
+   {
+    "kind": "system",
+    "text": "RAM runs at 5600 MT/s (kit rated 5600).",
+    "level": "ok"
+   },
+   {
+    "kind": "system",
+    "text": "Present mode: Hardware: Independent Flip.",
+    "level": "ok"
+   },
+   {
+    "kind": "system",
+    "text": "Windows Game Mode is off.",
+    "level": "info"
+   },
+   {
+    "kind": "system",
+    "text": "Memory integrity (VBS/HVCI) is on. It can cost a few percent in some games.",
+    "level": "info"
+   },
+   {
+    "kind": "capture",
+    "text": "Frame generation (DLSS/FSR) can't be detected. Say so if it was on.",
+    "level": "info"
+   }
+  ],
+  "format": 1,
+  "system": {
+   "cpu": "AMD Ryzen 7 7800X3D 8-Core Processor",
+   "bios": "3287",
+   "gpus": [
+    {
+     "name": "NVIDIA GeForce RTX 4070 Ti SUPER",
+     "driver": "32.0.16.2140",
+     "vendor": "NVIDIA",
+     "driver_date": "2026-11-21",
+     "nvidia_driver": "621.40"
+    },
+    {
+     "name": "AMD Radeon(TM) Graphics",
+     "driver": "32.0.21045.29003",
+     "vendor": "Advanced Micro Devices, Inc.",
+     "driver_date": "2026-11-17",
+     "nvidia_driver": null
+    }
+   ],
+   "hags": null,
+   "board": "ASUSTeK COMPUTER INC. TUF GAMING B650-PLUS WIFI",
+   "errors": 0,
+   "os_name": "Microsoft Windows 11 Home",
+   "displays": [
+    {
+     "name": "ROG STRIX XG27AQWMG",
+     "width": 2560,
+     "height": 1440,
+     "primary": true,
+     "refresh_hz": 280,
+     "max_refresh_hz": 280
+    },
+    {
+     "name": "Generic PnP Monitor",
+     "width": 1440,
+     "height": 2560,
+     "primary": false,
+     "refresh_hz": 260,
+     "max_refresh_hz": 260
+    }
+   ],
+   "os_build": "26300.9974",
+   "ram_part": "CMH32GX5M2B5600Z36",
+   "ram_type": "DDR5",
+   "bios_date": "2025-09-20",
+   "cpu_cores": 8,
+   "game_mode": false,
+   "os_release": "26H2",
+   "power_plan": "Balanced",
+   "cpu_threads": 16,
+   "ram_kit_mts": 5600,
+   "ram_modules": 2,
+   "ram_total_gb": 32,
+   "ram_running_mts": 5600,
+   "memory_integrity": true,
+   "ram_module_max_mts": 4800,
+   "windowed_optimizations": null
+  },
+  "capture": {
+   "app": "cs2.exe",
+   "pid": 9848,
+   "reason": "foreground window process",
+   "started": "2026-11-27T17:01:56+00:00",
+   "csv_schema": "v3",
+   "presentmon": "2.6.0 (SHA-256 verified)",
+   "recorded_s": 90,
+   "requested_s": 90,
+   "stop_method": "terminate_existing_session",
+   "other_presenters": 4,
+   "foreground_is_game": true
+  },
+  "analysis": {
+   "app": "cs2.exe",
+   "pid": 9848,
+   "stats": {
+    "p5_ms": 1.145185,
+    "frames": 42238,
+    "max_ms": 8.4295,
+    "p1_fps": 212.13289871545047,
+    "p95_ms": 4.042330000000001,
+    "p99_ms": 4.714026,
+    "spikes": 10,
+    "avg_fps": 474.7617532097969,
+    "p01_fps": 145.52847391929652,
+    "p999_ms": 6.871507499999997,
+    "stdev_ms": 0.9445891492180497,
+    "median_ms": 1.775,
+    "cpu_p1_fps": 244.75298549691718,
+    "cpu_p99_ms": 4.0857519999999985,
+    "duration_s": 88.9667285,
+    "second_fps": [
+     502.1,
+     533.1,
+     521.8,
+     465.8,
+     399.2,
+     370.3,
+     434.8,
+     600.1,
+     399.7,
+     331.4,
+     429.8,
+     459.3,
+     418.4,
+     349.1,
+     356.8,
+     365.2,
+     422.3,
+     513.7,
+     478.7,
+     463.5,
+     559.2,
+     493,
+     485.3,
+     329.3,
+     278.1,
+     277.2,
+     486.3,
+     503.1,
+     461.1,
+     379.3,
+     531.4,
+     545.3,
+     529,
+     579.9,
+     579.1,
+     599.4,
+     615.6,
+     623.8,
+     477,
+     418.1,
+     444.2,
+     444.1,
+     478.4,
+     514.4,
+     516,
+     536.6,
+     554.9,
+     539.7,
+     504.8,
+     433.8,
+     364.4,
+     362.1,
+     364.8,
+     369.8,
+     426.7,
+     469.7,
+     472.5,
+     550.9,
+     543.8,
+     544.9,
+     554.6,
+     556.9,
+     590.4,
+     591.5,
+     610.5,
+     759.3,
+     705,
+     554.2,
+     448.3,
+     277.2,
+     407.9,
+     415.6,
+     534.9,
+     561.1,
+     462.7,
+     361,
+     412,
+     476,
+     466,
+     489.4,
+     468.1,
+     405,
+     315.5,
+     293,
+     339.7,
+     481.3,
+     612.2
+    ],
+    "low1_avg_fps": 181.2738759602146,
+    "worst_1s_fps": 277.1717277260363,
+    "worst_spikes": [
+     [
+      6.87,
+      12
+     ],
+     [
+      6.77,
+      16.2
+     ],
+     [
+      6.3,
+      13.5
+     ]
+    ],
+    "second_fps_max": 759.2776678431302,
+    "spike_time_pct": 0.06795675306864858,
+    "second_fps_median": 476.02561017782756,
+    "second_fps_steady_pct": 17.24137931034483
+   },
+   "display": {
+    "vsync": false,
+    "runtime": "DXGI",
+    "dropped_pct": 0,
+    "present_mode": "Hardware: Independent Flip",
+    "displayed_fps": 474.76911267903097,
+    "pc_latency_ms": 6.6417,
+    "sync_interval": 0,
+    "tearing_allowed": true,
+    "present_mode_pct": 100,
+    "pc_latency_p95_ms": 10.21131,
+    "input_to_photon_ms": 37.2888
+   },
+   "bottleneck": {
+    "notes": [
+     "22% of frames had the CPU blocked in Present with VSync off and no cap. That means the GPU queue was full, so they count as GPU-limited.",
+     "At very high FPS, Hardware-Accelerated GPU Scheduling (HAGS) can overstate GPU busy by up to ~0.5 ms per frame, which inflates the GPU-limited share."
+    ],
+    "frames": 42239,
+    "cap_fps": null,
+    "cpu_pct": 7.878974407538057,
+    "gpu_pct": 92.12102559246195,
+    "verdict": "mostly GPU-limited (92%)",
+    "wait_pct": 0,
+    "available": true,
+    "cpu_fps_ceiling": null,
+    "gpu_fps_ceiling": 535.2172982230785,
+    "median_cpu_busy_ms": 0.6041,
+    "median_cpu_wait_ms": 1.1506,
+    "median_gpu_busy_ms": 1.8684
+   },
+   "skipped_start_s": 1
+  },
+  "frametrace": "0.0.1",
+  "game_settings": {
+   "reader": "Source 2 video config and convars",
+   "source": "c:\\program files (x86)\\steam\\userdata\\<account>\\730\\local\\cfg\\cs2_video.txt + cs2_machine_convars.vcfg, cs2_user_convars_0_slot0.vcfg",
+   "modified": 1795798904.4481153,
+   "settings": [
+    [
+     "defaultres",
+     "1920"
+    ],
+    [
+     "defaultresheight",
+     "1440"
+    ],
+    [
+     "refreshrate_numerator",
+     "0"
+    ],
+    [
+     "refreshrate_denominator",
+     "0"
+    ],
+    [
+     "fullscreen",
+     "0"
+    ],
+    [
+     "coop_fullscreen",
+     "1"
+    ],
+    [
+     "nowindowborder",
+     "1"
+    ],
+    [
+     "mat_vsync",
+     "0"
+    ],
+    [
+     "fullscreen_min_on_focus_loss",
+     "0"
+    ],
+    [
+     "high_dpi",
+     "0"
+    ],
+    [
+     "shaderquality",
+     "0"
+    ],
+    [
+     "r_texturefilteringquality",
+     "5"
+    ],
+    [
+     "msaa_samples",
+     "4"
+    ],
+    [
+     "r_csgo_cmaa_enable",
+     "0"
+    ],
+    [
+     "videocfg_shadow_quality",
+     "1"
+    ],
+    [
+     "videocfg_dynamic_shadows",
+     "1"
+    ],
+    [
+     "videocfg_texture_detail",
+     "0"
+    ],
+    [
+     "videocfg_particle_detail",
+     "0"
+    ],
+    [
+     "videocfg_ao_detail",
+     "0"
+    ],
+    [
+     "videocfg_parallax_detail",
+     "0"
+    ],
+    [
+     "videocfg_hdr_detail",
+     "-1"
+    ],
+    [
+     "videocfg_fsr_detail",
+     "0"
+    ],
+    [
+     "monitor_index",
+     "0"
+    ],
+    [
+     "r_low_latency",
+     "0"
+    ],
+    [
+     "aspectratiomode",
+     "0"
+    ],
+    [
+     "fps_max",
+     "0"
+    ],
+    [
+     "fps_max_tools",
+     "120"
+    ],
+    [
+     "fps_max_ui",
+     "120"
+    ],
+    [
+     "r_drawtracers_firstperson",
+     "true"
+    ],
+    [
+     "r_fullscreen_gamma",
+     "2.4"
+    ],
+    [
+     "r_icon_image_cache_to_disk",
+     "true"
+    ],
+    [
+     "r_player_visibility_mode",
+     "1"
+    ],
+    [
+     "r_show_build_info",
+     "false"
+    ],
+    [
+     "r_spectator_flashbang_opacity",
+     "0.6"
+    ]
+   ]
+  }
+ }
+}

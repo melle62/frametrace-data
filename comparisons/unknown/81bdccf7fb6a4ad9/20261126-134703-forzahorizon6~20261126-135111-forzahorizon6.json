@@ -1,0 +1,110 @@
+{
+ "kind": "comparison",
+ "contributor": "81bdccf7fb6a4ad9",
+ "local_id": "20261126-134703-forzahorizon6~20261126-135111-forzahorizon6",
+ "schema": 1,
+ "app_version": "0.0.1",
+ "received_at": "2026-11-27T17:49:56.072535+00:00",
+ "updated_at": "2026-11-27T17:49:56.01+00:00",
+ "csv": null,
+ "data": {
+  "a": "20261126-134703-forzahorizon6",
+  "b": "20261126-135111-forzahorizon6",
+  "game": {
+   "exe": null,
+   "name": null,
+   "build": null,
+   "engine": null,
+   "store_id": null
+  },
+  "goal": "lows",
+  "notes": [],
+  "advice": null,
+  "copied": false,
+  "deltas": {
+   "Max": {
+    "a": 217.8857,
+    "b": 18.4874,
+    "change": -91.51509254622951,
+    "status": "better"
+   },
+   "P99": {
+    "a": 16.098927000000003,
+    "b": 9.732181999999995,
+    "change": -39.54763569025443,
+    "status": "better"
+   },
+   "1% low": {
+    "a": 62.11594101892628,
+    "b": 102.75188030803375,
+    "change": 65.41950201917732,
+    "status": "better"
+   },
+   "Median": {
+    "a": 9.914100000000001,
+    "b": 3.4130000000000003,
+    "change": -65.5742830917582,
+    "status": "better"
+   },
+   "Average": {
+    "a": 149.62575839502216,
+    "b": 266.14991003115836,
+    "change": 77.87706668026004,
+    "status": "better"
+   },
+   "0.1% low": {
+    "a": 41.86721463705309,
+    "b": 84.62022573849893,
+    "change": 102.11572819465476,
+    "status": "better"
+   },
+   "Worst second": {
+    "a": 92.80501665999735,
+    "b": 247.29848748669653,
+    "change": 166.47103398807107,
+    "status": "better"
+   },
+   "CPU-side 1% low": {
+    "a": 61.889008499712645,
+    "b": 102.26954529528395,
+    "change": 65.24670175602957,
+    "status": "better"
+   },
+   "PC latency, P95": {
+    "a": 46.02815,
+    "b": 28.87,
+    "change": -37.27751386923002,
+    "status": "better"
+   },
+   "Time in hitches": {
+    "a": 60.980753685647834,
+    "b": 70.19651608404044,
+    "change": 9.215762398392606,
+    "status": "worse"
+   },
+   "CPU busy, median": {
+    "a": 9.7693,
+    "b": 3.3117,
+    "change": -66.10094889091337,
+    "status": "changed"
+   },
+   "GPU busy, median": {
+    "a": 8.6083,
+    "b": 5.2017,
+    "change": -39.57343494069677,
+    "status": "changed"
+   },
+   "PC latency, median": {
+    "a": 37.9859,
+    "b": 24.753,
+    "change": -34.83634717092394,
+    "status": "better"
+   }
+  },
+  "status": "better",
+  "verdict": "B is better for higher 1% lows.",
+  "target_fps": null,
+  "settings_changed": null,
+  "settings_unchanged_but_moved": false
+ }
+}

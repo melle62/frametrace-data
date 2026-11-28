@@ -1,0 +1,268 @@
+{
+ "kind": "capture",
+ "contributor": "81bdccf7fb6a4ad9",
+ "local_id": "20261127-162143-forzahorizon6",
+ "schema": 1,
+ "app_version": "0.0.1",
+ "received_at": "2026-11-27T15:22:46.32166+00:00",
+ "updated_at": "2026-11-27T18:01:53.192+00:00",
+ "csv": {
+  "url": "https://github.com/melle62/frametrace-data/releases/download/csv-2026-11/81bdccf7fb6a4ad9_20261127-162143-forzahorizon6.csv.gz",
+  "bytes": 437464,
+  "sha256": "21e00bc41d4e1339d9cb1513e5db7ccc108a335d9f4566fea923843017707ef2"
+ },
+ "data": {
+  "game": {
+   "exe": "forzahorizon6.exe",
+   "name": "Forza Horizon 6",
+   "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\ForzaHorizon6\\forzahorizon6.exe",
+   "build": "26422872",
+   "store": "Steam",
+   "engine": null,
+   "version": "6.483.970.0",
+   "store_id": "2483190",
+   "install_dir": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\ForzaHorizon6",
+   "name_source": "steam"
+  },
+  "goal": {
+   "key": "lows",
+   "target_fps": null
+  },
+  "user": {
+   "label": "FG Auto",
+   "bundle": "20261127-162313-forzahorizon6"
+  },
+  "checks": [
+   {
+    "kind": "system",
+    "text": "RAM runs at 5600 MT/s (kit rated 5600).",
+    "level": "ok"
+   },
+   {
+    "kind": "system",
+    "text": "Present mode: Hardware: Independent Flip.",
+    "level": "ok"
+   },
+   {
+    "kind": "system",
+    "text": "Windows Game Mode is off.",
+    "level": "info"
+   },
+   {
+    "kind": "system",
+    "text": "Memory integrity (VBS/HVCI) is on. It can cost a few percent in some games.",
+    "level": "info"
+   },
+   {
+    "kind": "capture",
+    "text": "Frame generation (DLSS/FSR) can't be detected. Say so if it was on.",
+    "level": "info"
+   }
+  ],
+  "format": 1,
+  "system": {
+   "cpu": "AMD Ryzen 7 7800X3D 8-Core Processor",
+   "bios": "3287",
+   "gpus": [
+    {
+     "name": "NVIDIA GeForce RTX 4070 Ti SUPER",
+     "driver": "32.0.16.2140",
+     "vendor": "NVIDIA",
+     "driver_date": "2026-11-21",
+     "nvidia_driver": "621.40"
+    },
+    {
+     "name": "AMD Radeon(TM) Graphics",
+     "driver": "32.0.21045.29003",
+     "vendor": "Advanced Micro Devices, Inc.",
+     "driver_date": "2026-11-17",
+     "nvidia_driver": null
+    }
+   ],
+   "hags": null,
+   "board": "ASUSTeK COMPUTER INC. TUF GAMING B650-PLUS WIFI",
+   "errors": 0,
+   "os_name": "Microsoft Windows 11 Home",
+   "displays": [
+    {
+     "name": "ROG STRIX XG27AQWMG",
+     "width": 2560,
+     "height": 1440,
+     "primary": true,
+     "refresh_hz": 280,
+     "max_refresh_hz": 280
+    },
+    {
+     "name": "Generic PnP Monitor",
+     "width": 1440,
+     "height": 2560,
+     "primary": false,
+     "refresh_hz": 260,
+     "max_refresh_hz": 260
+    }
+   ],
+   "os_build": "26300.9974",
+   "ram_part": "CMH32GX5M2B5600Z36",
+   "ram_type": "DDR5",
+   "bios_date": "2025-09-20",
+   "cpu_cores": 8,
+   "game_mode": false,
+   "os_release": "26H2",
+   "power_plan": "Balanced",
+   "cpu_threads": 16,
+   "ram_kit_mts": 5600,
+   "ram_modules": 2,
+   "ram_total_gb": 32,
+   "ram_running_mts": 5600,
+   "memory_integrity": true,
+   "ram_module_max_mts": 4800,
+   "windowed_optimizations": null
+  },
+  "capture": {
+   "app": "forzahorizon6.exe",
+   "pid": 15460,
+   "reason": "foreground window process",
+   "started": "2026-11-27T15:21:43+00:00",
+   "csv_schema": "v3",
+   "presentmon": "2.6.0 (SHA-256 verified)",
+   "recorded_s": 60,
+   "requested_s": 60,
+   "stop_method": "terminate_existing_session",
+   "other_presenters": 3,
+   "foreground_is_game": true
+  },
+  "analysis": {
+   "app": "forzahorizon6.exe",
+   "pid": 15460,
+   "stats": {
+    "p5_ms": 0.2143,
+    "frames": 6409,
+    "max_ms": 30.1788,
+    "p1_fps": 50.812326501311155,
+    "p95_ms": 18.09396,
+    "p99_ms": 19.680264,
+    "spikes": 21,
+    "avg_fps": 108.76776236618858,
+    "p01_fps": 42.81933754168746,
+    "p999_ms": 23.35393439999939,
+    "stdev_ms": 7.93930431853846,
+    "median_ms": 14.3773,
+    "cpu_p1_fps": 50.68757698175753,
+    "cpu_p99_ms": 19.728700000000003,
+    "duration_s": 58.9237092,
+    "second_fps": [
+     104.9,
+     105.1,
+     105.6,
+     107.2,
+     102,
+     104.8,
+     108.1,
+     106.2,
+     99.7,
+     99.4,
+     107.3,
+     112.3,
+     106.9,
+     111.5,
+     115.7,
+     110.3,
+     116.1,
+     109.2,
+     102,
+     104.3,
+     103,
+     103.6,
+     106.9,
+     104.4,
+     101.7,
+     112.8,
+     106.9,
+     106.8,
+     107.8,
+     115.1,
+     104.7,
+     106.8,
+     108,
+     115.8,
+     112.4,
+     107.2,
+     115,
+     116.1,
+     109.3,
+     109.3,
+     109.6,
+     105.5,
+     110.8,
+     110.6,
+     110.7,
+     108.8,
+     114.9,
+     108.7,
+     114.4,
+     114.4,
+     113.7,
+     110.1,
+     111.8,
+     110.2,
+     114.3,
+     109.8,
+     104.5
+    ],
+    "low1_avg_fps": 46.99293666791296,
+    "worst_1s_fps": 99.37339114479737,
+    "worst_spikes": [
+     [
+      30.18,
+      57.7
+     ],
+     [
+      29.44,
+      2.6
+     ],
+     [
+      27.57,
+      42.5
+     ]
+    ],
+    "second_fps_max": 116.12948700354518,
+    "spike_time_pct": 0.6667582630728209,
+    "second_fps_median": 108.65275314506964,
+    "second_fps_steady_pct": 50.87719298245614
+   },
+   "display": {
+    "vsync": false,
+    "runtime": "DXGI",
+    "dropped_pct": 0.358814352574103,
+    "present_mode": "Hardware: Independent Flip",
+    "displayed_fps": 108.37281680377214,
+    "pc_latency_ms": 42.296350000000004,
+    "sync_interval": 0,
+    "tearing_allowed": true,
+    "present_mode_pct": 100,
+    "pc_latency_p95_ms": 53.439004999999995,
+    "input_to_photon_ms": null
+   },
+   "bottleneck": {
+    "notes": [
+     "28% of frames had the CPU blocked in Present with VSync off and no cap. That means the GPU queue was full, so they count as GPU-limited."
+    ],
+    "frames": 6410,
+    "cap_fps": null,
+    "cpu_pct": 12.683307332293293,
+    "gpu_pct": 87.3166926677067,
+    "verdict": "mostly GPU-limited (87%)",
+    "wait_pct": 0,
+    "available": true,
+    "cpu_fps_ceiling": null,
+    "gpu_fps_ceiling": 68.87170922364366,
+    "median_cpu_busy_ms": 14.2373,
+    "median_cpu_wait_ms": 0.1557,
+    "median_gpu_busy_ms": 14.51975
+   },
+   "skipped_start_s": 1
+  },
+  "frametrace": "0.0.1",
+  "game_settings": null
+ }
+}

@@ -1,0 +1,187 @@
+{
+ "kind": "capture",
+ "contributor": "81bdccf7fb6a4ad9",
+ "local_id": "20261126-134703-forzahorizon6",
+ "schema": 1,
+ "app_version": "0.0.1",
+ "received_at": "2026-11-26T17:02:36.606322+00:00",
+ "updated_at": "2026-11-27T18:01:37.733+00:00",
+ "csv": {
+  "url": "https://github.com/melle62/frametrace-data/releases/download/csv-2026-11/81bdccf7fb6a4ad9_20261126-134703-forzahorizon6.csv.gz",
+  "bytes": 1773066,
+  "sha256": "7a049ad7f06cff470bc1c16ceb51dabe1348d04ca2a21ece85ed87c2508773e4"
+ },
+ "data": {
+  "user": {
+   "label": "Base",
+   "bundle": "20261126-134703-forzahorizon6"
+  },
+  "checks": [
+   {
+    "text": "RAM runs at 5600 MT/s (kit rated 5600).",
+    "level": "ok"
+   },
+   {
+    "text": "Present mode: Hardware: Independent Flip.",
+    "level": "ok"
+   },
+   {
+    "text": "Memory integrity (VBS/HVCI) is on. It can cost a few percent in some games.",
+    "level": "info"
+   },
+   {
+    "text": "Stutter: 61.0% of the time was spent in hitches (frames twice as long as their neighbours).",
+    "level": "warn"
+   },
+   {
+    "text": "Frame generation (DLSS/FSR) can't be detected. Say so if it was on.",
+    "level": "info"
+   }
+  ],
+  "format": 1,
+  "system": {
+   "cpu": "AMD Ryzen 7 7800X3D 8-Core Processor",
+   "bios": "3287",
+   "gpus": [
+    {
+     "name": "NVIDIA GeForce RTX 4070 Ti SUPER",
+     "driver": "32.0.16.2140",
+     "vendor": "NVIDIA",
+     "driver_date": "2026-11-21",
+     "nvidia_driver": "621.40"
+    },
+    {
+     "name": "AMD Radeon(TM) Graphics",
+     "driver": "32.0.21045.29003",
+     "vendor": "Advanced Micro Devices, Inc.",
+     "driver_date": "2026-11-17",
+     "nvidia_driver": null
+    }
+   ],
+   "hags": null,
+   "board": "ASUSTeK COMPUTER INC. TUF GAMING B650-PLUS WIFI",
+   "errors": 0,
+   "os_name": "Microsoft Windows 11 Home",
+   "displays": [
+    {
+     "name": "Generic PnP Monitor",
+     "width": 1440,
+     "height": 2560,
+     "primary": false,
+     "refresh_hz": 260,
+     "max_refresh_hz": 260
+    },
+    {
+     "name": "ROG STRIX XG27AQWMG",
+     "width": 2560,
+     "height": 1440,
+     "primary": true,
+     "refresh_hz": 280,
+     "max_refresh_hz": 280
+    }
+   ],
+   "os_build": "26300.9974",
+   "ram_part": "CMH32GX5M2B5600Z36",
+   "ram_type": "DDR5",
+   "bios_date": "2025-09-20",
+   "cpu_cores": 8,
+   "game_mode": true,
+   "os_release": "26H2",
+   "power_plan": "Balanced",
+   "cpu_threads": 16,
+   "ram_kit_mts": 5600,
+   "ram_modules": 2,
+   "ram_total_gb": 32,
+   "ram_running_mts": 5600,
+   "memory_integrity": true,
+   "ram_module_max_mts": 4800,
+   "windowed_optimizations": null
+  },
+  "capture": {
+   "app": "forzahorizon6.exe",
+   "pid": 25796,
+   "reason": "foreground window process",
+   "started": "2026-11-26T12:47:03+00:00",
+   "csv_schema": "v3",
+   "presentmon": "2.6.0 (SHA-256 verified)",
+   "recorded_s": 180,
+   "requested_s": 180,
+   "stop_method": "terminate_existing_session",
+   "other_presenters": 3,
+   "foreground_is_game": true
+  },
+  "analysis": {
+   "app": "forzahorizon6.exe",
+   "pid": 25796,
+   "stats": {
+    "p5_ms": 0.1835,
+    "frames": 26770,
+    "max_ms": 217.8857,
+    "p1_fps": 62.11594101892628,
+    "p95_ms": 14.51882,
+    "p99_ms": 16.098927000000003,
+    "spikes": 8481,
+    "avg_fps": 149.62575839502216,
+    "p01_fps": 41.86721463705309,
+    "p999_ms": 23.885037699999884,
+    "stdev_ms": 6.438976551641315,
+    "median_ms": 9.914100000000001,
+    "cpu_p1_fps": 61.889008499712645,
+    "cpu_p99_ms": 16.157958,
+    "duration_s": 178.9130447,
+    "low1_avg_fps": 52.534604809812635,
+    "worst_1s_fps": 92.80501665999735,
+    "worst_spikes": [
+     [
+      217.89,
+      174.8
+     ],
+     [
+      39.2,
+      171.5
+     ],
+     [
+      30.18,
+      170.2
+     ]
+    ],
+    "second_fps_max": 168.41517709457355,
+    "spike_time_pct": 60.980753685647834,
+    "second_fps_median": 149.25132550102177,
+    "second_fps_steady_pct": 51.41242937853107
+   },
+   "display": {
+    "vsync": false,
+    "runtime": "DXGI",
+    "dropped_pct": 0,
+    "present_mode": "Hardware: Independent Flip",
+    "displayed_fps": 149.62292351735118,
+    "pc_latency_ms": 37.9859,
+    "sync_interval": 0,
+    "tearing_allowed": true,
+    "present_mode_pct": 100,
+    "pc_latency_p95_ms": 46.02815,
+    "input_to_photon_ms": 19.2099
+   },
+   "bottleneck": {
+    "notes": [
+     "27% of frames had the CPU blocked in Present with VSync off and no cap. That means the GPU queue was full, so they count as GPU-limited."
+    ],
+    "frames": 26771,
+    "cap_fps": null,
+    "cpu_pct": 14.003959508423295,
+    "gpu_pct": 85.99604049157671,
+    "verdict": "mostly GPU-limited (86%)",
+    "wait_pct": 0,
+    "available": true,
+    "cpu_fps_ceiling": null,
+    "gpu_fps_ceiling": 116.16695514793862,
+    "median_cpu_busy_ms": 9.7693,
+    "median_cpu_wait_ms": 0.1296,
+    "median_gpu_busy_ms": 8.6083
+   },
+   "skipped_start_s": 1
+  },
+  "frametrace": "0.0.1"
+ }
+}

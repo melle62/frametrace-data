@@ -1,0 +1,41 @@
+{
+ "updated": "2026-11-27T22:40:26.976+00:00",
+ "captures": 61,
+ "comparisons": 20,
+ "contributors": 1,
+ "games": {
+  "cs2": 52,
+  "forzahorizon6": 9
+ },
+ "by_game": {
+  "cs2": {
+   "captures": 52,
+   "comparisons": 17,
+   "benchmarks": {
+    "Dust Benchmark": 36,
+    "Mirage Benchmark": 9
+   },
+   "untagged": 7,
+   "bundles": 16,
+   "bundled": 35,
+   "labelled": 24,
+   "settings_read": 45,
+   "builds": [
+    "26879581"
+   ]
+  },
+  "forzahorizon6": {
+   "captures": 9,
+   "comparisons": 2,
+   "benchmarks": {},
+   "untagged": 9,
+   "bundles": 4,
+   "bundled": 8,
+   "labelled": 8,
+   "settings_read": 0,
+   "builds": [
+    "26422872"
+   ]
+  }
+ }
+}

@@ -1,0 +1,183 @@
+{
+ "kind": "capture",
+ "contributor": "81bdccf7fb6a4ad9",
+ "local_id": "20261126-014910-cs2",
+ "schema": 1,
+ "app_version": "0.0.1",
+ "received_at": "2026-11-26T17:02:37.904072+00:00",
+ "updated_at": "2026-11-27T22:40:24.842+00:00",
+ "csv": {
+  "url": "https://github.com/melle62/frametrace-data/releases/download/csv-2026-11/81bdccf7fb6a4ad9_20261126-014910-cs2.csv.gz",
+  "bytes": 2057533,
+  "sha256": "c9fee868013a03ffd4db11f660217b8b5f4401d0711936b582c789c0065801ce"
+ },
+ "data": {
+  "user": {
+   "benchmark": "Dust Benchmark"
+  },
+  "checks": [
+   {
+    "text": "RAM runs at 5600 MT/s (kit rated 5600).",
+    "level": "ok"
+   },
+   {
+    "text": "Present mode: Hardware: Independent Flip.",
+    "level": "ok"
+   },
+   {
+    "text": "Memory integrity (VBS/HVCI) is on. It can cost a few percent in some games.",
+    "level": "info"
+   },
+   {
+    "text": "Frame generation (DLSS/FSR) can't be detected. Say so if it was on.",
+    "level": "info"
+   }
+  ],
+  "format": 1,
+  "system": {
+   "cpu": "AMD Ryzen 7 7800X3D 8-Core Processor",
+   "bios": "3287",
+   "gpus": [
+    {
+     "name": "NVIDIA GeForce RTX 4070 Ti SUPER",
+     "driver": "32.0.16.2140",
+     "vendor": "NVIDIA",
+     "driver_date": "2026-11-21",
+     "nvidia_driver": "621.40"
+    },
+    {
+     "name": "AMD Radeon(TM) Graphics",
+     "driver": "32.0.21045.29003",
+     "vendor": "Advanced Micro Devices, Inc.",
+     "driver_date": "2026-11-17",
+     "nvidia_driver": null
+    }
+   ],
+   "hags": null,
+   "board": "ASUSTeK COMPUTER INC. TUF GAMING B650-PLUS WIFI",
+   "errors": 0,
+   "os_name": "Microsoft Windows 11 Home",
+   "displays": [
+    {
+     "name": "Generic PnP Monitor",
+     "width": 1440,
+     "height": 2560,
+     "primary": false,
+     "refresh_hz": 260,
+     "max_refresh_hz": 260
+    },
+    {
+     "name": "ROG STRIX XG27AQWMG",
+     "width": 2560,
+     "height": 1440,
+     "primary": true,
+     "refresh_hz": 280,
+     "max_refresh_hz": 280
+    }
+   ],
+   "os_build": "26300.9974",
+   "ram_part": "CMH32GX5M2B5600Z36",
+   "ram_type": "DDR5",
+   "bios_date": "2025-09-20",
+   "cpu_cores": 8,
+   "game_mode": true,
+   "os_release": "26H2",
+   "power_plan": "Balanced",
+   "cpu_threads": 16,
+   "ram_kit_mts": 5600,
+   "ram_modules": 2,
+   "ram_total_gb": 32,
+   "ram_running_mts": 5600,
+   "memory_integrity": true,
+   "ram_module_max_mts": 4800,
+   "windowed_optimizations": null
+  },
+  "capture": {
+   "app": "cs2.exe",
+   "pid": 27520,
+   "reason": "foreground window process",
+   "started": "2026-11-26T00:49:10+00:00",
+   "csv_schema": "v3",
+   "presentmon": "2.6.0 (SHA-256 verified)",
+   "recorded_s": 80,
+   "requested_s": 80,
+   "stop_method": "terminate_existing_session",
+   "other_presenters": 2,
+   "foreground_is_game": true
+  },
+  "analysis": {
+   "app": "cs2.exe",
+   "pid": 27520,
+   "stats": {
+    "p5_ms": 1.1663,
+    "frames": 32688,
+    "max_ms": 9.2358,
+    "p1_fps": 154.2513365107052,
+    "p95_ms": 5.1714649999999995,
+    "p99_ms": 6.482926,
+    "spikes": 10,
+    "avg_fps": 413.9799703678841,
+    "p01_fps": 122.11668165893177,
+    "p999_ms": 8.188889399999994,
+    "stdev_ms": 1.2636077821623568,
+    "median_ms": 1.9764,
+    "cpu_p1_fps": 190.82935199695257,
+    "cpu_p99_ms": 5.240284000000007,
+    "duration_s": 78.9603419,
+    "low1_avg_fps": 136.23414554236444,
+    "worst_1s_fps": 188.26558626254058,
+    "worst_spikes": [
+     [
+      8.1,
+      72
+     ],
+     [
+      7.75,
+      76.9
+     ],
+     [
+      7.73,
+      14.3
+     ]
+    ],
+    "second_fps_max": 743.0739358566177,
+    "spike_time_pct": 0.08934497787426628,
+    "second_fps_median": 423.0247892526502,
+    "second_fps_steady_pct": 10.38961038961039
+   },
+   "display": {
+    "vsync": false,
+    "runtime": "DXGI",
+    "dropped_pct": 0,
+    "present_mode": "Hardware: Independent Flip",
+    "displayed_fps": 413.9853897161247,
+    "pc_latency_ms": 6.2956,
+    "sync_interval": 0,
+    "tearing_allowed": true,
+    "present_mode_pct": 100,
+    "pc_latency_p95_ms": 9.219399999999998,
+    "input_to_photon_ms": null
+   },
+   "bottleneck": {
+    "notes": [
+     "17% of frames had the CPU blocked in Present with VSync off and no cap. That means the GPU queue was full, so they count as GPU-limited.",
+     "At very high FPS, Hardware-Accelerated GPU Scheduling (HAGS) can overstate GPU busy by up to ~0.5 ms per frame, which inflates the GPU-limited share."
+    ],
+    "frames": 32689,
+    "cap_fps": null,
+    "cpu_pct": 12.386429685827036,
+    "gpu_pct": 87.61357031417296,
+    "verdict": "mostly GPU-limited (88%)",
+    "wait_pct": 0,
+    "available": true,
+    "cpu_fps_ceiling": null,
+    "gpu_fps_ceiling": 479.8694755026633,
+    "median_cpu_busy_ms": 1.228,
+    "median_cpu_wait_ms": 0.9476,
+    "median_gpu_busy_ms": 2.0839
+   },
+   "skipped_start_s": 1
+  },
+  "frametrace": "0.0.1"
+ }
+}

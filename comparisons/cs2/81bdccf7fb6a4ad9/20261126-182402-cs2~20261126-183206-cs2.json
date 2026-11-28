@@ -1,0 +1,126 @@
+{
+ "kind": "comparison",
+ "contributor": "81bdccf7fb6a4ad9",
+ "local_id": "20261126-182402-cs2~20261126-183206-cs2",
+ "schema": 1,
+ "app_version": "0.0.1",
+ "received_at": "2026-11-26T17:37:15.942376+00:00",
+ "updated_at": "2026-11-26T17:43:03.139+00:00",
+ "csv": null,
+ "data": {
+  "a": "20261126-182402-cs2",
+  "b": "20261126-183206-cs2",
+  "game": {
+   "exe": "cs2.exe",
+   "name": "Counter-Strike 2",
+   "build": "26879581",
+   "engine": "Source 2",
+   "store_id": "730"
+  },
+  "goal": "lows",
+  "notes": [],
+  "advice": "Claude",
+  "copied": true,
+  "deltas": {
+   "Max": {
+    "a": 19.6577,
+    "b": 25.6797,
+    "change": 30.634306149753034,
+    "status": "worse"
+   },
+   "P99": {
+    "a": 6.641859999999995,
+    "b": 6.639944999999994,
+    "change": -0.028832284932251248,
+    "status": "same"
+   },
+   "1% low": {
+    "a": 150.56023463306977,
+    "b": 150.60365710860572,
+    "change": 0.02884060033631915,
+    "status": "same"
+   },
+   "Median": {
+    "a": 2.4844,
+    "b": 2.3978,
+    "change": -3.4857510867815082,
+    "status": "better"
+   },
+   "Average": {
+    "a": 366.16085777555264,
+    "b": 375.2296846417208,
+    "change": 2.4767330187234537,
+    "status": "better"
+   },
+   "0.1% low": {
+    "a": 97.81305464281286,
+    "b": 97.89704230714632,
+    "change": 0.08586549580745013,
+    "status": "same"
+   },
+   "Worst second": {
+    "a": 296.9684025619674,
+    "b": 287.0407310797402,
+    "change": -3.343005988711416,
+    "status": "same"
+   },
+   "CPU-side 1% low": {
+    "a": 157.88928550677412,
+    "b": 158.73565148762324,
+    "change": 0.5360502950738959,
+    "status": "same"
+   },
+   "PC latency, P95": {
+    "a": 10.290304999999998,
+    "b": 10.1206,
+    "change": -1.6491736639487236,
+    "status": "same"
+   },
+   "Time in hitches": {
+    "a": 3.1764921567437048,
+    "b": 3.347533938401575,
+    "change": 0.1710417816578702,
+    "status": "same"
+   },
+   "CPU busy, median": {
+    "a": 1.0553,
+    "b": 1.0317,
+    "change": -2.236330901165531,
+    "status": "same"
+   },
+   "GPU busy, median": {
+    "a": 2.471,
+    "b": 2.3732,
+    "change": -3.957911776608656,
+    "status": "changed"
+   },
+   "PC latency, median": {
+    "a": 8.2361,
+    "b": 7.9344,
+    "change": -3.6631415354354644,
+    "status": "better"
+   }
+  },
+  "status": "same",
+  "verdict": "No clear change for higher 1% lows.",
+  "target_fps": null,
+  "settings_changed": [
+   [
+    "msaa_samples",
+    "0",
+    "2"
+   ],
+   [
+    "r_csgo_cmaa_enable",
+    "1",
+    "0"
+   ],
+   [
+    "videocfg_shadow_quality",
+    "2",
+    "1"
+   ]
+  ],
+  "settings_unchanged_but_moved": false
+ }
+}

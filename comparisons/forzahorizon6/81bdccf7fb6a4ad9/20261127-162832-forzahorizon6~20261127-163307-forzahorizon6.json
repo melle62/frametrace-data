@@ -1,0 +1,110 @@
+{
+ "kind": "comparison",
+ "contributor": "81bdccf7fb6a4ad9",
+ "local_id": "20261127-162832-forzahorizon6~20261127-163307-forzahorizon6",
+ "schema": 1,
+ "app_version": "0.0.1",
+ "received_at": "2026-11-27T15:37:25.735166+00:00",
+ "updated_at": "2026-11-27T15:37:25.685+00:00",
+ "csv": null,
+ "data": {
+  "a": "20261127-162832-forzahorizon6",
+  "b": "20261127-163307-forzahorizon6",
+  "game": {
+   "exe": "forzahorizon6.exe",
+   "name": "Forza Horizon 6",
+   "build": "26422872",
+   "engine": null,
+   "store_id": "2483190"
+  },
+  "goal": "lows",
+  "notes": [],
+  "advice": null,
+  "copied": false,
+  "deltas": {
+   "Max": {
+    "a": 43.63650000000001,
+    "b": 45.6533,
+    "change": 4.621818890149275,
+    "status": "same"
+   },
+   "P99": {
+    "a": 28.505512,
+    "b": 28.79194799999999,
+    "change": 1.004844256086301,
+    "status": "same"
+   },
+   "1% low": {
+    "a": 35.080934522417984,
+    "b": 34.7319326917373,
+    "change": -0.9948475872490221,
+    "status": "same"
+   },
+   "Median": {
+    "a": 13.51075,
+    "b": 13.7148,
+    "change": 1.510278852025243,
+    "status": "worse"
+   },
+   "Average": {
+    "a": 69.99973921532656,
+    "b": 69.1567876897264,
+    "change": -1.2042209514626177,
+    "status": "worse"
+   },
+   "0.1% low": {
+    "a": 23.716945672064327,
+    "b": 23.17782219884665,
+    "change": -2.273157263469639,
+    "status": "same"
+   },
+   "Worst second": {
+    "a": 60.66275883914531,
+    "b": 61.468358154961734,
+    "change": 1.327996502685556,
+    "status": "same"
+   },
+   "CPU-side 1% low": {
+    "a": 35.025872210767204,
+    "b": 34.72952989413745,
+    "change": -0.846066915469008,
+    "status": "same"
+   },
+   "PC latency, P95": {
+    "a": 47.08762,
+    "b": 49.714195,
+    "change": 5.578058521539198,
+    "status": "worse"
+   },
+   "Time in hitches": {
+    "a": 5.723842521552739,
+    "b": 4.938721542357532,
+    "change": -0.7851209791952067,
+    "status": "better"
+   },
+   "CPU busy, median": {
+    "a": 13.2897,
+    "b": 13.49475,
+    "change": 1.5429242195083408,
+    "status": "same"
+   },
+   "GPU busy, median": {
+    "a": 13.4716,
+    "b": 13.719750000000001,
+    "change": 1.842023219216728,
+    "status": "same"
+   },
+   "PC latency, median": {
+    "a": 39.1915,
+    "b": 41.69715,
+    "change": 6.39335059898193,
+    "status": "worse"
+   }
+  },
+  "status": "same",
+  "verdict": "No clear change for higher 1% lows.",
+  "target_fps": null,
+  "settings_changed": null,
+  "settings_unchanged_but_moved": false
+ }
+}

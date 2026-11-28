@@ -1,0 +1,116 @@
+{
+ "kind": "comparison",
+ "contributor": "81bdccf7fb6a4ad9",
+ "local_id": "20261126-181558-cs2~20261126-183206-cs2",
+ "schema": 1,
+ "app_version": "0.0.1",
+ "received_at": "2026-11-26T17:42:52.270252+00:00",
+ "updated_at": "2026-11-26T17:43:03.627+00:00",
+ "csv": null,
+ "data": {
+  "a": "20261126-181558-cs2",
+  "b": "20261126-183206-cs2",
+  "game": {
+   "exe": "cs2.exe",
+   "name": "Counter-Strike 2",
+   "build": "26879581",
+   "engine": "Source 2",
+   "store_id": "730"
+  },
+  "goal": "lows",
+  "notes": [],
+  "advice": "Claude",
+  "copied": false,
+  "deltas": {
+   "Max": {
+    "a": 18.982,
+    "b": 25.6797,
+    "change": 35.28448003371616,
+    "status": "worse"
+   },
+   "P99": {
+    "a": 4.562773999999999,
+    "b": 6.639944999999994,
+    "change": 45.52430166385613,
+    "status": "worse"
+   },
+   "1% low": {
+    "a": 219.16492028752688,
+    "b": 150.60365710860572,
+    "change": -31.282954903993875,
+    "status": "worse"
+   },
+   "Median": {
+    "a": 2.3119,
+    "b": 2.3978,
+    "change": 3.715558631428699,
+    "status": "worse"
+   },
+   "Average": {
+    "a": 405.28920610571583,
+    "b": 375.2296846417208,
+    "change": -7.416807803204685,
+    "status": "worse"
+   },
+   "0.1% low": {
+    "a": 155.18168563126548,
+    "b": 97.89704230714632,
+    "change": -36.91456442884368,
+    "status": "worse"
+   },
+   "Worst second": {
+    "a": 318.74509954389475,
+    "b": 287.0407310797402,
+    "change": -9.9466214569327,
+    "status": "worse"
+   },
+   "CPU-side 1% low": {
+    "a": 239.87741304683678,
+    "b": 158.73565148762324,
+    "change": -33.826345102100284,
+    "status": "worse"
+   },
+   "PC latency, P95": {
+    "a": 9.831679999999999,
+    "b": 10.1206,
+    "change": 2.938663585470652,
+    "status": "same"
+   },
+   "Time in hitches": {
+    "a": 0.3506971206652761,
+    "b": 3.347533938401575,
+    "change": 2.9968368177362987,
+    "status": "worse"
+   },
+   "CPU busy, median": {
+    "a": 1.1667,
+    "b": 1.0317,
+    "change": -11.571097968629466,
+    "status": "changed"
+   },
+   "GPU busy, median": {
+    "a": 2.3026,
+    "b": 2.3732,
+    "change": 3.0660991922175027,
+    "status": "changed"
+   },
+   "PC latency, median": {
+    "a": 7.5701,
+    "b": 7.9344,
+    "change": 4.81235386586703,
+    "status": "worse"
+   }
+  },
+  "status": "worse",
+  "verdict": "B is worse for higher 1% lows.",
+  "target_fps": null,
+  "settings_changed": [
+   [
+    "videocfg_shadow_quality",
+    "2",
+    "1"
+   ]
+  ],
+  "settings_unchanged_but_moved": false
+ }
+}
